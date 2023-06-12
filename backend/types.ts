@@ -1,7 +1,8 @@
 import { ObjectId } from 'mongodb';
 
 export interface Todo {
-  id?: ObjectId;
+    _id?: ObjectId;
+  id?: number;
   text: string;
   completed: boolean;
 }
