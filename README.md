@@ -43,9 +43,20 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 This is a demonstation of creating a Todo application. The tech stack used is:
 Frontend : React with TypeScript and materialUI Modules for CSS styling
 Backend: Express.js
+Database: MongoDB
 
 ## Running the Back end
 1. Install dependencies by running `yarn`
 2. navigate to the backend package (`cd backend`)
 3. Run `npx tsc` to compile the package into the dist folder
 4. Run `node backend/dist/index.js` from the root of the project
+5. In a separate terminal hit `curl http://localhost:5000/api/todos` to receive a response and make sure the server is working
+
+## Running the Front end
+1. Install dependencies by running yarn
+2. Navigate to the front-end package (`cd todo-app`)
+3. Run yarn start. The package should build and automatically open up a new window at localhost:3000
+4. While set up to hit a mongodb database, an implementation using local storage for the persistence layer can be swapped in. The instance can be found in the `utils` folder.
+
+## Additional Notes
+An env.example file has been added to the package. This is to facilitate MongoDB credentials.
